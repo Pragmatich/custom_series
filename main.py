@@ -23,14 +23,14 @@ def custom_series():
         # If i odd
         if i % 2:
             step = step_sizes[int((i-1)/2)]
-            from_range = final_list_pre[i-1]
-            to_range = range_list[i]
+            from_range = final_list_pre[i-1] + step
+            to_range = range_list[i] + step
         
         # If i even
         else:
             step = step_sizes[int(i/2)]
             from_range = range_list[i]
-            to_range = final_list_pre[i+1] + step
+            to_range = final_list_pre[i+1]
     
 
         for j in range(from_range, to_range, step):
