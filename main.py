@@ -30,7 +30,7 @@ def custom_series():
         else:
             step = step_sizes[int(i/2)]
             from_range = range_list[i]
-            to_range = final_list_pre[i+1]
+            to_range = final_list_pre[i+1] + step
     
 
         for j in range(from_range, to_range, step):
