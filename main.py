@@ -3,12 +3,14 @@ def custom_series():
     step_sizes = []
     range_list = [1, 5, 0, 10]
     final_list = []
-
+    
+    # Creat the step_sizes from ranger_list and steps
     for i in range(0, len(range_list), 2):
         step_sizes.append(int((range_list[i+1] - range_list[i]) / steps))
         final_list.append(range_list[i])
         final_list.append(range_list[i] + step_sizes[int(i/2)])
-
+    
+    # reamining_enter --> to define how much level necessary
     remaining_enter = len(range_list) - 1
     final_list_pre = final_list.copy()
 
