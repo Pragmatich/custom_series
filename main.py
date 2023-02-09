@@ -40,6 +40,6 @@ def custom_series():
             print(f'j: {j}')
             final_list.append(final_list_pre)
             
-    remaining_enter = range_stepper(remaining_enter, final_list_pre)
+    range_stepper(remaining_enter, final_list_pre)
 
 custom_series()
